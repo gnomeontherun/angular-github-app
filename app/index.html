@@ -7,16 +7,25 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <title>Angular GitHub</title>
+    <style type="text/css">
+    [ng-cloak] {
+      display: none;
+    }
+    </style>
   </head>
 
-  <body>
+  <body ng-cloak>
+
+    <md-toolbar layout="row">
+      <h1 class="md-toolbar-tools" layout-align-gt-sm="center">GitHub Issue Tracker</h1>
+    </md-toolbar>
 
     <script src="./jspm_packages/system.js" type="text/javascript"></script>
     <script src="./config.js" type="text/javascript"></script>
     <script type="text/javascript">
         System
-            .import('js/app') // Import and bootstrap the application
-            .catch( console.error.bind(console) ); // Print any errors to console
+          .import('js/app') // Import and bootstrap the application
+          .catch( console.error.bind(console) ); // Print any errors to console
     </script>
 
   </body>
